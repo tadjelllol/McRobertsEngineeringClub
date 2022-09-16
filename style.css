@@ -1,0 +1,143 @@
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+    width: 800px ;
+  }
+  
+  @media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #somethingorother {
+      width: 120px ;
+    }
+  }
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #somethingorother {
+      width: 320px ;
+    }
+  }
+  @media screen and (min-width: 481px) {
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    #somethingorother {
+      width: 480px ;
+    }
+  }
+  
+  /* code that is here will apply to any screen size */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80;
+}
+
+header h4{
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/* splash screen */
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+.Bannar__image{
+    width: 30vh;
+    height: 30vh;
+    
+    
+    
+    
+    position: relative;
+    
+}
+
+.Discord__image{
+    width: 12vh;
+    height: 13vh;
+    
+    
+    
+    position: relative;
+
+}
+
+.Insta__image{
+    width: 23vh;
+    height: 13vh;
+    
+    
+    
+    position: relative;
+
+}
+
+.header h1{
+    min-height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(117, 194, 245, 0.7)),(rgba(255, 255, 255, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+
+
