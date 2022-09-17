@@ -124,7 +124,15 @@ header h4{
     
     position: relative;
 
-}
+.header{
+    min-height: 10vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    }
 
 
 
